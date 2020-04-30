@@ -12,7 +12,6 @@ body {
     position: relative;
     min-height: 100%;
     overflow: auto;
-    
 }
 .header {
     background-color: tomato;
@@ -45,6 +44,11 @@ body {
 .card:hover {
     box-shadow: 0 14px 28px rgba(245, 147, 67, 0.25), 0 10px 10px rgba(123, 176, 236, 0.25);
   }
+
+.show-text {
+    color: blue;
+}
+
   
 footer {
     position: absolute;

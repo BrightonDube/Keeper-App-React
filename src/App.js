@@ -26,26 +26,30 @@ function App() {
                 body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
                       porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
                 imgUrl={"http://placekitten.com/g/250/150"}
+                maxText = {200}
           />
           <Card title={<em>{uniqueId()}</em>} 
-                body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
-                      porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
+                body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis"
                 imgUrl={"https://unsplash.it/250/150"}
+                maxText = {100}
           />
           <Card title={<em>{uniqueId()}</em>} 
                 body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
                       porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
                 imgUrl={"https://picsum.photos/250/150"}
+                maxText = {100}
           />
           <Card title={<em>{uniqueId()}</em>} 
                 body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
                       porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
                 imgUrl={"https://unsplash.it/250/150"}
+                maxText = {100}
           />
          <Card title={<em>{uniqueId()}</em>} 
                 body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
                       porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
                 imgUrl={"https://baconmockup.com/250/150"}
+                maxText = {100}
           />
          
           
