@@ -4,56 +4,31 @@ import Header from "./components/Header";
 import './App.css';
 import Footer from './components/Footer';
 import Card from './components/Card';
-//import Gate from './components/Gate';
+import Composer from './components/Composer';
 
-
-
-function App() {
-  let uniqueId = ()=>{
-    const names = ["Food", "Car", "Work", "Gym", "Movies" ];
-    let randomizer = Math.floor(Math.random() * 4);
-    return names[randomizer];
-  };
+function App() { 
 
   return (
     <div className="App">
       <div id="content-wrap">
-        <Header />
-        
+        <Header />  
+        <div className="note-input">
+        <Composer placeholderText="Enter Note Title" /> 
+        <Composer placeholderText="Enter Note Text"/> 
+        <button style={{fontSize : ".7rem"}}>Add</button> 
+        </div>        
+             
         <div className="innerContent">
-        
-          <Card title={<em>{uniqueId()}</em>} 
+          <Card title={<em></em>} 
                 body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
                       porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
                 imgUrl={"http://placekitten.com/g/250/150"}
                 maxText = {200}
-          />
-          <Card title={<em>{uniqueId()}</em>} 
-                body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis"
-                imgUrl={"https://unsplash.it/250/150"}
-                maxText = {100}
-          />
-          <Card title={<em>{uniqueId()}</em>} 
-                body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
-                      porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
-                imgUrl={"https://picsum.photos/250/150"}
-                maxText = {100}
-          />
-          <Card title={<em>{uniqueId()}</em>} 
-                body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
-                      porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
-                imgUrl={"https://unsplash.it/250/150"}
-                maxText = {100}
-          />
-         <Card title={<em>{uniqueId()}</em>} 
-                body="Lorem ipsum dolor sit amet, elit. Exercitationem, aperiam. Tempore magnam delectus odit perferendis ullam molestias, in voluptatibus 
-                      porro ipsam eveniet iusto ex assumenda quis officiis inventore asperiores sed!"
-                imgUrl={"https://baconmockup.com/250/150"}
-                maxText = {100}
-          />
+          />      
          
-          
+         
         </div>
+        
       </div>
 
       <Footer />

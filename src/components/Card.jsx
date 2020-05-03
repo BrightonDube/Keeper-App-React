@@ -10,9 +10,9 @@ let Card = ({title, body, imgUrl, maxText})=> {
                 <span>
                 {hidden ? body.substr(0, maxText)+"... " : body}
                  {hidden ? (
-                    <span className="show-text" onClick={()=>setHidden(false)} >Show more.</span>
+                    <span className="show-text" onClick={()=>setHidden(false)} > Show more.</span>
                 ): (
-                    <span className="show-text" onClick={()=>setHidden(true)}>Show less.</span>
+                    <span className="show-text" onClick={()=>setHidden(true)}> Show less.</span>
                 )} 
                 </span>
 
