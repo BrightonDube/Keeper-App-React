@@ -1,7 +1,7 @@
 //jshint esversion: 8
 import React, { useState } from "react";
 
-let Card = ({title, body, imgUrl, maxText})=> {
+let Card = ({title, body, imgUrl, maxText, id, onDelete})=> {
     const [hidden, setHidden] = useState(true);
     let truncater = () => {
         if (body.length <= maxText) return <span>{body}</span>;
@@ -24,6 +24,7 @@ let Card = ({title, body, imgUrl, maxText})=> {
         <h1>{title}</h1>
         <img className="cardImage" src={imgUrl} alt="card-img"/>
         <p> {truncater()}</p>
+        <button style={{backgroundColor:"tomato", color: "white", border: "none"}} onClick={()=>{onDelete(id)} } >DELETE</button>
         </div>
     );
 }

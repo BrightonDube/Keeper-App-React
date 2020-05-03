@@ -2,6 +2,6 @@
 import React from 'react';
 const today = new Date();
 const year = today.getFullYear();
-let Footer = () => <footer><p>Copyright &copy; {year}</p></footer>;
+let Footer = () => <footer>Copyright &copy; {year}</footer>;
 
 export default Footer;
